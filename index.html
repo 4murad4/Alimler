@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientists</title>
+    <style>
+        html , body {
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            height: 60px;
+            background-color: indigo;
+            color: lavender;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+        }
+
+        .footer {
+            display: flex;
+            height: 60px;
+            background-color: indigo;
+            color: lavender;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+        }
+
+        .container {
+            display: flex;
+            height: 1500px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+   
+        .item {
+            height: 400px;
+            width: 400px;
+            margin: 30px;
+        }
+
+        .item:hover {
+            transition: 0.4s;
+            transform: scale(1.05);
+            filter: drop-shadow(10px 10px 10px black);
+        }
+
+        .img {
+            height: 350px;
+            width: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .p {
+            height: 50px;
+            width: 400px;
+            padding: 5px;
+            background-color: indigo;
+            color: lavender;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+
+        .img1 {
+            background-image: url(albert.jpg);
+        }
+
+        .img2 {
+            background-image: url(vinci.jpg);
+        }
+
+        .img3 {
+            background-image: url(steven.jpg);
+        }
+
+        .img4 {
+            background-image: url(darvin.jpg);
+        }
+
+        .img5 {
+            background-image: url(karl.jpg);
+        }
+
+        .img6 {
+            background-image: url(kopernik.jpg);
+        }
+
+        @media (max-width:1000px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                height: 3000px;
+            }
+        }
+
+        @media (max-width:435px) {
+            .header {
+                font-size: 25px;
+            }
+
+            .footer {
+                font-size: 25px;
+            }
+
+            .img {
+                height: 300px;
+                width: 350px;
+            }
+
+            .p {
+                height: 45px;
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Famous Scientists</div>
+    
+    <div class="container">
+        <div class="item">
+            <div class="img img1"></div>
+            <div class="p">Albert Einstein</div>
+        </div>
+
+        <div class="item">
+            <div class="img img2"></div>
+            <div class="p">Leanardo da Vinci</div>
+        </div>
+
+        <div class="item">
+            <div class="img img3"></div>
+            <div class="p">Steven Hawking</div>
+        </div>
+
+        <div class="item">
+            <div class="img img4"></div>
+            <div class="p">Charles Darwin</div>
+        </div>
+
+        <div class="item">
+            <div class="img img5"></div>
+            <div class="p">Carl Linnaeus</div>
+        </div>
+
+        <div class="item">
+            <div class="img img6"></div>
+            <div class="p">Nicolaus Copernicus</div>
+        </div>
+    </div>
+
+    <div class="footer">Designed by Murad &copy; 2023</div>
+</body>
+</html>
